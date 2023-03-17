@@ -5,41 +5,45 @@ body {
     background-size: 100%;
 }
 
-h1{
+h1 {
     color: #380025;
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
     font-size: 100px;
-    
+
     font-weight: 600;
     text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
-    
+
 }
 
-p{
+p {
     color: #FFFF;
     font-family: fantasy;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 
-.postflow{
-	
-	/*background-color: #E0E0E0;*/
+.postflow {
 
-	position: absolute;
-	align-self: center;
-	left: 15%;
-	width: 70%;
+    /*background-color: #E0E0E0;*/
+
+    position: absolute;
+    align-self: center;
+    left: 15%;
+    width: 70%;
     top: 0;
-	bottom: 0;
+    bottom: 0;
     text-align: center;
-	
+
 }
 
 .button {
     border-style: groove;
     border-color: #380025;
     border-width: 5px;
+
+    /*makes the button rounded*/
+    border-radius: 15px;
+
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -49,6 +53,18 @@ p{
     margin: 4px 2px;
     cursor: pointer;
     -webkit-text-fill-color: black;
-  }
+    box-shadow: 0 10px #380025;
+}
 
-  .button:hover {background-color: #bdbdbd}
+.button:hover {
+    background-color: #bdbdbd;
+    
+}
+
+.button:active {
+    background-color: #bdbdbd;
+    box-shadow: 0 5px #16000f;
+
+    /*makes button drop down towards shadow*/
+    transform: translateY(5px);
+}
