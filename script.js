@@ -2,7 +2,7 @@
 
 
 function chooseAnswer(){
-var y = Math.floor(Math.random() * 19);
+var y = Math.floor(Math.random() * 21);
 console.log(y);
 console.log('suckmyballs2');
 printAnswer(y);
