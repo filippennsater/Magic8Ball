@@ -9,5 +9,5 @@ printAnswer(y);
 }
 
 function printAnswer(y){
-document.getElementById('answerDiv').innerHTML='Yeebooi he THICC';
+document.getElementById('outputAnswer').innerHTML='Yeebooi he THICC';
 }

@@ -21,12 +21,34 @@ p {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+h2 {
+    color: #004f99;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 100px;
+    font-weight: 600;
+    text-shadow: -4px 0 rgb(0, 0, 0), 0 4px rgb(255, 0, 0), 4px 0 rgb(38, 23, 250), 0 -4px rgb(0, 255, 64);
+
+}
+
 
 .postflow {
 
     /*background-color: #E0E0E0;*/
 
     position: absolute;
+    align-self: center;
+    left: 15%;
+    width: 70%;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+
+}
+
+.resultDiv{
+
+    /*background-color: #E0E0E0;*/
+    position: relative;
     align-self: center;
     left: 15%;
     width: 70%;
@@ -68,3 +90,4 @@ p {
     /*makes button drop down towards shadow*/
     transform: translateY(5px);
 }
+
