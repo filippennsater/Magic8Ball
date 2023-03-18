@@ -21,12 +21,17 @@ var array = ["It is certain",
     "Outlook not so good",
     "Very doubtful"];
 
-function chooseAnswer() {
 
+var lastAnswer = -1;
+
+function chooseAnswer() {
     var y = Math.floor(Math.random() * 20);
+    while (lastAnswer == y) {
+        y = Math.floor(Math.random() * 20);
+    }
+    lastAnswer = y;
     console.log(y);
     printAnswer(y);
-
 }
 
 function printAnswer(y) {
@@ -36,7 +41,9 @@ function printAnswer(y) {
 
 var snd = new Audio("buttonpress.mp3");
 
-function playSound(){
+function playSound() {
+    snd.currentTime = 0;
     snd.play();
 }
+
 
