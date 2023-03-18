@@ -34,8 +34,10 @@ function printAnswer(y) {
 }
 
 
-function splitAnswers() {
+var snd = new Audio("buttonpress.mp3");
 
-
+function playSound(){
+    snd.play();
+    console.log('cray');
 }
 
